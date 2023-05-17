@@ -3,6 +3,18 @@ body {
   font-family: 'Lato';
 }
 
+.theme {
+  position: fixed;
+  cursor: pointer;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(39, 38, 40, 0.4);
+}
+
 .wrapper {
   padding: 30px 135px;
   background-image: url('assets/bg.png');
@@ -31,12 +43,11 @@ header {
 }
 
 .menu-item {
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.08em;
-  color: #262a3f;
-  text-decoration: none;
   margin-right: 30px;
 }
 
@@ -44,14 +55,9 @@ header {
   margin-right: 0;
 }
 
-.menu-item:first-of-type {
-  border-bottom: 3px solid rgba(241, 137, 123, 0.3);
-}
-
 .first-content {
   max-width: 523px;
   margin-top: 150px;
-  color: #262a3f;
 }
 
 .first-content__slogan {
@@ -63,7 +69,6 @@ header {
 
 .slogan-italic {
   font-style: italic;
-  color: #85bbb1;
 }
 
 .first-content__notification {
@@ -77,7 +82,7 @@ header {
   cursor: pointer;
   border: none;
   background: transparent;
-  color: #f1897b;
+  font-family: 'Lato';
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -92,14 +97,6 @@ header {
   margin: 0;
 }
 
-.primary-btn:hover {
-  color: #e64f3a;
-}
-
-.primary-btn:hover::before {
-  background: rgba(230, 79, 58, 0.3);
-}
-
 .primary-btn::before {
   content: '';
   display: block;
@@ -109,14 +106,13 @@ header {
   left: 10px;
   top: 11px;
   z-index: 1;
-  background: rgba(241, 137, 123, 0.3);
 }
 
 .primary-btn-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e4e4e4;
+  cursor: pointer;
   width: 300px;
   height: 90px;
 }
@@ -127,7 +123,6 @@ header {
 }
 
 .info-section__right {
-  background: #ffffff;
   opacity: 0.9;
   padding: 45px 0;
   margin: 45px 0 45px -170px;
@@ -151,7 +146,6 @@ header {
 .info-section__info-list__usd-char {
   font-size: 40px;
   line-height: 50px;
-  color: #e4e4e4;
   margin-right: 10px;
 }
 
@@ -166,7 +160,6 @@ header {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  color: #262a3f;
   opacity: 0.8;
   margin-top: 12px;
 }
@@ -188,7 +181,6 @@ header {
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262a3f;
   opacity: 0.8;
 }
 
@@ -208,9 +200,7 @@ header {
 }
 
 .benefits-section__item {
-  border-top: 1px solid #e4e4e4;
   padding: 50px 35px 112px;
-  color: #262a3f;
   display: flex;
   flex-direction: column;
 }
@@ -234,7 +224,6 @@ header {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  color: #262a3f;
   opacity: 0.8;
   margin-top: 30px;
   text-align: left;
@@ -293,7 +282,6 @@ header {
 .video-section__tablet-inner,
 .video-section__tablet-inner__small-ellipse,
 .video-section__tablet-inner__large-ellipse {
-  border: 1px solid #e4e4e4;
   border-radius: 32px;
 }
 
@@ -340,7 +328,6 @@ header {
 }
 
 .promises-section__right {
-  background: #ffffff;
   opacity: 0.9;
   padding: 75px 0 75px 70px;
   margin: 45px 0 45px -201px;
@@ -371,7 +358,6 @@ header {
   font-weight: 400;
   font-size: 24px;
   line-height: 48px;
-  color: #262a3f;
   margin-bottom: 15px;
 }
 
@@ -379,13 +365,11 @@ header {
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262a3f;
   opacity: 0.8;
 }
 
 .reviews-section {
   flex-direction: column;
-  border-bottom: 1px solid #e4e4e4;
 }
 
 .reviews-section > span {
@@ -403,11 +387,16 @@ header {
 }
 
 .reviews-section__review {
-  padding: 30px 40px;
   background-repeat: no-repeat;
   background-size: 100%;
-  max-width: 290px;
-  min-height: 280px;
+  max-width: 370px;
+  min-height: 340px;
+  display: flex;
+}
+
+.reviews-section__review-bg-wrapper {
+  padding: 30px 40px;
+  background-color: rgba(25, 28, 41, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -437,7 +426,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 100px;
-  border-bottom: 1px solid #e4e4e4;
 }
 
 .contact-section__left-side {
@@ -476,7 +464,7 @@ header {
 .contact-section__contact-form__field {
   width: 100%;
   height: 72px;
-  border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+
   padding-bottom: 12px;
   display: flex;
   align-items: flex-end;
@@ -489,7 +477,6 @@ header {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.08em;
-  color: #262a3f;
   opacity: 0.5;
 }
 
@@ -503,7 +490,6 @@ footer {
   font-weight: 300;
   font-size: 14px;
   line-height: 26px;
-  color: #262a3f;
   opacity: 0.6;
 }
 
@@ -512,7 +498,6 @@ footer {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.08em;
-  color: #262a3f;
 }
 
 .madeby-block,

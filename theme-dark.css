@@ -1,0 +1,90 @@
+body {
+  background-color: #161926;
+}
+
+h1,
+h2,
+h3,
+span,
+p,
+a {
+  color: #ffffff;
+}
+
+.wrapper {
+  background-image: url('assets/bg-dark.png');
+}
+
+header {
+  background: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%),
+    rgba(22, 25, 38, 0.02);
+}
+
+.menu-item {
+  color: #ffffff;
+}
+
+.menu-item:first-of-type {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(96.73deg, rgba(83, 243, 205, 0.3) 6.73%, rgba(83, 243, 205, 0) 116.9%);
+  border-image-slice: 1;
+}
+
+.slogan-italic {
+  color: #689ff2;
+}
+
+.primary-btn {
+  color: #53f3cd;
+}
+
+.primary-btn:hover {
+  color: #02e0ab;
+}
+
+.primary-btn:hover::before {
+  background: rgba(2, 224, 171, 0.3);
+}
+
+.primary-btn::before {
+  background: rgba(83, 243, 205, 0.3);
+}
+
+.primary-btn-wrapper:hover {
+  border: 1px solid #02e0ab;
+}
+
+.primary-btn-wrapper,
+.video-section__tablet-outer,
+.video-section__tablet-inner,
+.video-section__tablet-inner__small-ellipse,
+.video-section__tablet-inner__large-ellipse {
+  border: 1px solid #515773;
+}
+
+.info-section__right,
+.promises-section__right {
+  background: #161926;
+}
+
+.info-section__info-list__usd-char {
+  color: #ffffff;
+}
+
+.benefits-section__item {
+  border-top: 1px solid #515773;
+}
+
+.quote-section__image {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(100%) saturate(254%) hue-rotate(109deg) brightness(98%)
+    contrast(98%);
+}
+
+.reviews-section,
+.contact-section {
+  border-bottom: 1px solid #515773;
+}
+
+.contact-section__contact-form__field {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
