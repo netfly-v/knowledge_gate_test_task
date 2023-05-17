@@ -1,6 +1,7 @@
 body {
   font-family: 'Playfair Display';
   font-family: 'Lato';
+  box-sizing: border-box;
 }
 
 .theme {
@@ -203,6 +204,12 @@ header {
   padding: 50px 35px 112px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1400px) {
+    max-height: 180px;
+  }
+  @media (max-width: 1250px) {
+    max-height: 220px;
+  }
 }
 
 .benefits-section__item__title-wrapper {
@@ -235,6 +242,9 @@ header {
   background-image: url('assets/quote-background.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  @media (max-width: 1400px) {
+    background-size: cover;
+  }
 }
 
 .quote-section__content {
@@ -291,6 +301,10 @@ header {
   padding: 31px 14px 31px 8px;
   display: flex;
   align-items: center;
+  max-width: 870px;
+  @media (min-width: 1900px) {
+    align-self: center;
+  }
 }
 
 .video-section__tablet-inner {
@@ -384,6 +398,9 @@ header {
 .reviews-section__review-wrapper {
   margin: 50px 0 100px;
   justify-content: space-between;
+  @media (min-width: 1900px) {
+    justify-content: space-evenly;
+  }
 }
 
 .reviews-section__review {
@@ -392,6 +409,10 @@ header {
   max-width: 370px;
   min-height: 340px;
   display: flex;
+  @media (max-width: 1400px) {
+    min-height: auto;
+    background-size: cover;
+  }
 }
 
 .reviews-section__review-bg-wrapper {
@@ -438,6 +459,9 @@ header {
 
 .contact-section__left-side__title {
   display: flex;
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+  }
 }
 
 .contact-section__left-side__title__text {
